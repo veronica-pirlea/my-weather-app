@@ -1,0 +1,110 @@
+h1,
+h2 {
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  font-weight: 650;
+}
+h1 {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-top: -50px;
+}
+h2 {
+  line-height: 2;
+  font-size: 20px;
+}
+
+.weather-app {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/087/492/original/background.jpg?1688023307");
+  background-size: cover;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 100px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+}
+.search-bar {
+  margin-top: -70px;
+  font-family: "Nunito Sans", sans-serif;
+}
+.btn {
+  border-color: black;
+  font-size: 14px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.searched-city {
+  margin-top: 10px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+.weather-details {
+  border: 2px outset rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  margin: 80px auto;
+  padding: 12px;
+  max-width: 500px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+.future-forecast {
+  border: 2px outset rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+  margin-bottom: -50px;
+  padding: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: black;
+}
+
+#celcius-link {
+  text-decoration: none;
+}
+
+#celsius-link:visited {
+  text-decoration: none;
+}
+#fahrenheit-link {
+  text-decoration: none;
+}
+#fahrenheit-link:visited {
+  text-decoration: none;
+}
+.location-icon {
+  position: initial;
+}
+.precipitation-icon {
+  width: 20px;
+}
+.humidity-icon {
+  width: 20px;
+}
+.wind-icon {
+  width: 20px;
+}
+.cloudy-icon {
+  width: 80px;
+}
+.sun-icon {
+  width: 40px;
+}
+.clouds-icon {
+  width: 40px;
+}
+.cloud-icon {
+  width: 40px;
+}
+.rain-icon {
+  width: 40px;
+}
