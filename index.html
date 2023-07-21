@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Weather App Wireframe</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+    rel="stylesheet" />
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+<script src="https://kit.fontawesome.com/50f1b5a3b4.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="src/style.css" />
+
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <form id="search-city">
+                <div class="row g-3 search-bar">
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Enter a city" aria-label="City"
+                            id="enter-city" />
+                    </div>
+                    <div class="col-sm">
+                        <button type="submit" class="btn">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        </button>
+                        <button type="click" class="btn" id="actual-location">
+                            <i class="fa-solid fa-location-dot location-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <p class="searched-city">
+                <span class="current-city" id="actual-city">
+                </span>
+                <br />
+                <span class="current-time" id="actual-date-time">
+                    Saturday 10:00</span>
+            </p>
+
+            <br />
+            <h1>
+                <img src="images/cloudy.png" alt="cloudy weather" class="cloudy-icon" />
+                <br />
+                <span class="temperature" id="temperature"></span>
+                <span class="units">
+                    <a href="#" id="celcius-link">°C</a> |
+                    <a href="#" id="fahrenheit-link"> °F</a>
+                </span>
+            </h1>
+            <h2 id="description"></h2>
+
+            <div class="row weather-details">
+                <div class="col-6">
+                    <img src="images/humidity.png" alt="humidity-icon" class="humidity-icon" />
+                    Humidity: <span id="humidity"></span>%
+                </div>
+                <div class="col-6">
+                    <img src="images/wind.png" alt="wind icon" class="wind-icon" />
+                    Wind: <span id="wind"></span> km/h
+                </div>
+            </div>
+
+            <div class="row future-forecast">
+                <div class="col">
+                    Sun <br />
+                    <img src="images/sun.png" alt="sunny weather" class="sun-icon" />
+                    <br />
+                    28° 16°
+                </div>
+                <div class="col">
+                    Mon <br />
+                    <img src="images/clouds.png" alt="cloudy weather" class="clouds-icon" />
+                    <br />
+                    28° 16°
+                </div>
+                <div class="col">
+                    Tue <br />
+                    <img src="images/cloudy.png" alt="cloudy weather" class="cloud-icon" /><br />
+                    29°18°
+                </div>
+                <div class="col">
+                    Wed <br />
+                    <img src="images/rain.png" alt="rainy weather" class="rain-icon" /><br />
+                    28°17°
+                </div>
+                <div class="col">
+                    Thu <br />
+                    <img src="images/cloudy.png" alt="cloudy weather" class="cloud-icon" /><br />
+                    26°15°
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="src/index.js"></script>
+
+</html>
