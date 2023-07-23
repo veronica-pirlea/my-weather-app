@@ -14,7 +14,6 @@ h2 {
   line-height: 2;
   font-size: 20px;
 }
-
 .weather-app {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/087/492/original/background.jpg?1688023307");
   background-size: cover;
@@ -80,6 +79,16 @@ h2 {
 }
 #fahrenheit-link:visited {
   text-decoration: none;
+}
+#coder {
+  text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+}
+#coder-paragraph {
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
 }
 .location-icon {
   position: initial;
