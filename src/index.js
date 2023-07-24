@@ -17,7 +17,7 @@ function formatDate(date) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-  return `${day} ${hour}:${minutes}`;
+  return `${day}, ${hour}:${minutes}`;
 }
 let actualTime = document.querySelector("#actual-date-time");
 let now = new Date();
@@ -67,4 +67,4 @@ searchForm.addEventListener("submit", handleSubmit);
 let currentLocationButton = document.querySelector("#actual-location");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-searchCity("Magdeburg");
+searchCity("Berlin");

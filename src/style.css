@@ -1,24 +1,26 @@
 h1,
 h2 {
   text-align: center;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
-  font-weight: 650;
+  font-weight: 600;
+  color: #00204a;
 }
 h1 {
-  font-size: 30px;
+  font-size: 35px;
   margin-top: 10px;
   margin-top: -50px;
 }
 h2 {
-  line-height: 2;
+  line-height: 1.5;
   font-size: 20px;
 }
+
 .weather-app {
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/087/492/original/background.jpg?1688023307");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/088/original/Untitled_design_%282%29.gif?1690227292");
   background-size: cover;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-  max-width: 800px;
+  max-width: 650px;
   margin: 0 auto;
   padding: 100px;
   margin-top: 30px;
@@ -27,68 +29,87 @@ h2 {
 }
 .search-bar {
   margin-top: -70px;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  margin-inline: -45px;
 }
+
 .btn {
-  border-color: black;
+  color: #111f4d;
+  border-color: #e4f1fe;
   font-size: 14px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .searched-city {
   margin-top: 10px;
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
   font-style: italic;
+  margin-inline: -35px;
+  color: black;
+  font-weight: 550;
 }
 .weather-details {
-  border: 2px outset rgba(0, 0, 0, 0.3);
+  border: 2px outset rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-  margin: 80px auto;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+  margin: 30px auto;
   padding: 12px;
-  max-width: 500px;
-  font-family: "Nunito Sans", sans-serif;
+  max-width: 400px;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
+  color: #00204a;
 }
 .future-forecast {
-  border: 2px outset rgba(0, 0, 0, 0.3);
+  border: 2px outset rgba(0, 0, 0, 0.8);
   border-radius: 10px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
   margin-top: 40px;
   margin-bottom: -50px;
-  padding: 20px;
-  font-family: "Nunito Sans", sans-serif;
+  margin-inline: -45px;
+  padding: 15px;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 450;
+  line-height: 2.2;
   text-align: center;
   color: black;
 }
-
-#celcius-link {
-  text-decoration: none;
+#enter-city {
+  color: black;
 }
-
+#celcius-link {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: #152744;
+  font-size: 25px;
+  vertical-align: super;
+}
 #celsius-link:visited {
   text-decoration: none;
 }
 #fahrenheit-link {
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
+  color: #152744;
+  font-size: 25px;
+  vertical-align: super;
 }
 #fahrenheit-link:visited {
   text-decoration: none;
 }
 #coder {
   text-decoration: none;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 #coder-paragraph {
   text-decoration: none;
   font-size: 15px;
   text-align: center;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  margin-top: -30px;
 }
 .location-icon {
   position: initial;
