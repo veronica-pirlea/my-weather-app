@@ -1,4 +1,13 @@
-function formatDate(date) {
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
   let days = [
     "Sunday",
     "Monday",
@@ -9,37 +18,29 @@ function formatDate(date) {
     "Saturday",
   ];
   let day = days[date.getDay()];
-  let hour = date.getHours();
-  if (hour < 10) {
-    hour = `0${hour}`;
-  }
-  let minutes = date.getMinutes();
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
-  return `${day}, ${hour}:${minutes}`;
+  return `${day}, ${hours}:${minutes}`;
 }
-let actualTime = document.querySelector("#actual-date-time");
-let now = new Date();
-actualTime.innerHTML = formatDate(now);
 
 function displayWeatherCondition(response) {
-  document.querySelector("#actual-city").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
+  document.querySelector("#actual-city").innerHTML = response.data.city;
+  document.querySelector("#actual-date-time").innerHTML = formatDate(
+    response.data.time * 1000
   );
-
-  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#temperature").innerHTML = Math.round(
+    response.data.temperature.current
+  );
+  document.querySelector("#humidity").innerHTML =
+    response.data.temperature.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
   document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
+    response.data.condition.description;
 }
 
 function searchCity(city) {
-  let apiKey = "cabdbda40038ba7d1165b953b1c7bd6c";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let apiKey = "e8t3a00e45d8beo463ff529a5ec7309b";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeatherCondition);
 }
 
@@ -50,8 +51,8 @@ function handleSubmit(event) {
 }
 
 function searchLocation(position) {
-  let apiKey = "cabdbda40038ba7d1165b953b1c7bd6c";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  let apiKey = "e8t3a00e45d8beo463ff529a5ec7309b";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${position.coordinates.longitude}&lat=${position.coordinates.latitude}&key=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(displayWeatherCondition);
 }

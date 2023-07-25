@@ -100,6 +100,9 @@ h2 {
 #fahrenheit-link:visited {
   text-decoration: none;
 }
+#description {
+  text-transform: capitalize;
+}
 #coder {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
@@ -123,7 +126,7 @@ h2 {
 .wind-icon {
   width: 20px;
 }
-.cloudy-icon {
+.h1-icon {
   width: 80px;
 }
 .sun-icon {
