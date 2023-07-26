@@ -49,6 +49,13 @@ h2 {
   color: black;
   font-weight: 550;
 }
+.units {
+  vertical-align: super;
+}
+.active {
+  color: black;
+  cursor: default;
+}
 .weather-details {
   border: 2px outset rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -83,9 +90,7 @@ h2 {
 #celcius-link {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
-  color: #152744;
   font-size: 25px;
-  vertical-align: super;
 }
 #celsius-link:visited {
   text-decoration: none;
@@ -93,12 +98,14 @@ h2 {
 #fahrenheit-link {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
-  color: #152744;
   font-size: 25px;
-  vertical-align: super;
+  cursor: default;
 }
 #fahrenheit-link:visited {
   text-decoration: none;
+}
+#units-bar {
+  font-size: 25px;
 }
 #description {
   text-transform: capitalize;
