@@ -30,7 +30,6 @@ function displayWeatherCondition(response) {
     response.data.temperature.current
   );
   celciusTemperature = response.data.temperature.current;
-
   document.querySelector("#humidity").innerHTML =
     response.data.temperature.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
@@ -73,14 +72,6 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-let searchForm = document.querySelector("#search-city");
-searchForm.addEventListener("submit", handleSubmit);
-
-let currentLocationButton = document.querySelector("#actual-location");
-currentLocationButton.addEventListener("click", getCurrentLocation);
-
-searchCity("Berlin");
-
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
@@ -97,6 +88,15 @@ function displayCelciusTemperature(event) {
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celciusTemperature);
 }
+
+let searchForm = document.querySelector("#search-city");
+searchForm.addEventListener("submit", handleSubmit);
+
+let currentLocationButton = document.querySelector("#actual-location");
+currentLocationButton.addEventListener("click", getCurrentLocation);
+
+searchCity("Berlin");
+
 let celciusTemperature = null;
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");

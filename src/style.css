@@ -2,22 +2,21 @@ h1,
 h2 {
   text-align: center;
   font-family: "Poppins", sans-serif;
-  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
   font-weight: 600;
-  color: #00204a;
+  color: #200f21;
 }
 h1 {
-  font-size: 35px;
-  margin-top: 10px;
+  font-size: 40px;
   margin-top: -50px;
 }
 h2 {
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .weather-app {
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/088/original/Untitled_design_%282%29.gif?1690227292");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/310/original/Untitled_design_%285%29.gif?1690399857");
   background-size: cover;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   max-width: 650px;
@@ -35,7 +34,7 @@ h2 {
 
 .btn {
   color: #111f4d;
-  border-color: #e4f1fe;
+  border-color: #200f21;
   font-size: 14px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
@@ -43,10 +42,10 @@ h2 {
 .searched-city {
   margin-top: 10px;
   font-family: "Poppins", sans-serif;
-  font-size: 17px;
+  font-size: 15px;
   font-style: italic;
   margin-inline: -35px;
-  color: black;
+  color: #200f21;
   font-weight: 550;
 }
 .units {
@@ -60,20 +59,19 @@ h2 {
   border: 2px outset rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
-  margin: 30px auto;
-  padding: 12px;
-  max-width: 400px;
+  margin: 28px auto;
+  padding: 10px;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 650;
   text-align: center;
-  color: #00204a;
+  color: #200f21;
 }
 .future-forecast {
   border: 2px outset rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
-  margin-top: 40px;
+  margin-top: 55px;
   margin-bottom: -50px;
   margin-inline: -45px;
   padding: 15px;
@@ -82,10 +80,14 @@ h2 {
   font-weight: 450;
   line-height: 2.2;
   text-align: center;
-  color: black;
+  color: #200f21;
 }
 #enter-city {
   color: black;
+}
+#h1-icon {
+  width: 80px;
+  margin-bottom: -10px;
 }
 #celcius-link {
   font-family: "Poppins", sans-serif;
@@ -124,17 +126,11 @@ h2 {
 .location-icon {
   position: initial;
 }
-.precipitation-icon {
-  width: 20px;
-}
 .humidity-icon {
   width: 20px;
 }
 .wind-icon {
   width: 20px;
-}
-.h1-icon {
-  width: 80px;
 }
 .sun-icon {
   width: 40px;
