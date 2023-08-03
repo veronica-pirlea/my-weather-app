@@ -1,7 +1,7 @@
 h1,
 h2 {
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
   text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
   font-weight: 600;
   color: #fcefed;
@@ -12,7 +12,7 @@ h1 {
 }
 h2 {
   line-height: 2.3;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .weather-app {
@@ -28,7 +28,7 @@ h2 {
 }
 .search-bar {
   margin-top: -70px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
   margin-inline: -45px;
 }
 
@@ -41,9 +41,8 @@ h2 {
 
 .searched-city {
   margin-top: 10px;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
   margin-inline: -35px;
   color: #fcefed;
   font-weight: 400;
@@ -60,9 +59,9 @@ h2 {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
   margin: 28px auto;
   padding: 10px;
-  font-family: "Poppins", sans-serif;
-  font-size: 15px;
-  font-weight: 550;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
   text-align: center;
   color: #f9f6f7;
 }
@@ -74,7 +73,7 @@ h2 {
   margin-bottom: -50px;
   margin-inline: -45px;
   padding: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
   font-size: 17px;
   font-weight: 350;
   line-height: 2.2;
@@ -95,7 +94,7 @@ h2 {
   margin-bottom: -10px;
 }
 #celcius-link {
-  font-family: "Poppins", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
   text-decoration: none;
   font-size: 20px;
   vertical-align: super;
@@ -104,7 +103,7 @@ h2 {
   text-decoration: none;
 }
 #fahrenheit-link {
-  font-family: "Poppins", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
   text-decoration: none;
   font-size: 20px;
   cursor: default;
@@ -122,12 +121,12 @@ h2 {
 }
 #coder {
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 #coder-paragraph {
   text-decoration: none;
   font-size: 15px;
   text-align: center;
-  font-family: "Poppins", sans-serif;
-  margin-top: -30px;
+  font-family: "Hanken Grotesk", sans-serif;
+  margin-top: -35px;
 }
