@@ -21,6 +21,55 @@ function formatDate(timestamp) {
   return `${day}, ${hours}:${minutes}`;
 }
 
+function formatDay(timeStamp) {
+  let date = new Date(timeStamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  return days[day];
+}
+
+function displayForecast(response) {
+  let forecast = response.data.daily;
+  let forecastElement = document.querySelector("#weather-forecast");
+  let forecastHTML = `<div class="row">`;
+
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 5) {
+      forecastHTML =
+        forecastHTML +
+        `                
+        <div class="col">
+                        <div class="forecast-day">${formatDay(
+                          forecastDay.time
+                        )} </div>
+                        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
+                          forecastDay.condition.icon
+                        }.png"
+                        alt="weather icon" width="60" />
+                        <div class="forecast-temperatures">
+                            <span class="forecast-max-temperature"><strong>${Math.round(
+                              forecastDay.temperature.maximum
+                            )}° </strong></span>
+                            <span class="forecast-min-temperature">${Math.round(
+                              forecastDay.temperature.minimum
+                            )}°</span>
+                        </div>
+                    </div>
+                `;
+    }
+  });
+
+  forecastHTML = forecastHTML + "</div>";
+  forecastElement.innerHTML = forecastHTML;
+}
+
+function getForecast(coordinates) {
+  let apiKey = "e8t3a00e45d8beo463ff529a5ec7309b";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=metric`;
+  console.log(apiUrl);
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function displayWeatherCondition(response) {
   document.querySelector("#actual-city").innerHTML = response.data.city;
   document.querySelector("#actual-date-time").innerHTML = formatDate(
@@ -46,6 +95,8 @@ function displayWeatherCondition(response) {
   document
     .querySelector("#h1-icon")
     .setAttribute("alt", response.data.condition.description);
+
+  getForecast(response.data.coordinates);
 }
 
 function searchCity(city) {

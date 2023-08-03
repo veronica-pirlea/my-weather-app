@@ -4,22 +4,22 @@ h2 {
   font-family: "Poppins", sans-serif;
   text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
   font-weight: 600;
-  color: #200f21;
+  color: #fcefed;
 }
 h1 {
   font-size: 40px;
-  margin-top: -50px;
+  margin-top: -35px;
 }
 h2 {
-  line-height: 1.5;
-  font-size: 18px;
+  line-height: 2.3;
+  font-size: 17px;
 }
 
 .weather-app {
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/310/original/Untitled_design_%285%29.gif?1690399857");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/925/original/Untitled_design_%286%29.gif?1690990140");
   background-size: cover;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-  max-width: 650px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 100px;
   margin-top: 30px;
@@ -33,8 +33,8 @@ h2 {
 }
 
 .btn {
-  color: #111f4d;
-  border-color: #200f21;
+  color: #fcefed;
+  border: 1px outset rgba(252, 239, 237, 0.9);
   font-size: 14px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
@@ -42,33 +42,32 @@ h2 {
 .searched-city {
   margin-top: 10px;
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-style: italic;
   margin-inline: -35px;
-  color: #200f21;
-  font-weight: 550;
+  color: #fcefed;
+  font-weight: 400;
 }
-.units {
-  vertical-align: super;
-}
+
 .active {
-  color: black;
+  color: #fcefed;
   cursor: default;
 }
+
 .weather-details {
-  border: 2px outset rgba(0, 0, 0, 0.5);
+  border: 1px inset rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
   margin: 28px auto;
   padding: 10px;
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-weight: 650;
+  font-size: 15px;
+  font-weight: 550;
   text-align: center;
-  color: #200f21;
+  color: #f9f6f7;
 }
-.future-forecast {
-  border: 2px outset rgba(0, 0, 0, 0.8);
+.weather-forecast {
+  border: 2px outset rgba(0, 0, 0, 0.9);
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
   margin-top: 55px;
@@ -76,23 +75,30 @@ h2 {
   margin-inline: -45px;
   padding: 15px;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-weight: 450;
+  font-size: 17px;
+  font-weight: 350;
   line-height: 2.2;
   text-align: center;
-  color: #200f21;
+  color: #f9f6f7;
+}
+.humidity-icon {
+  width: 23px;
+}
+.wind-icon {
+  width: 23px;
 }
 #enter-city {
   color: black;
 }
 #h1-icon {
-  width: 80px;
+  width: 90px;
   margin-bottom: -10px;
 }
 #celcius-link {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
+  vertical-align: super;
 }
 #celsius-link:visited {
   text-decoration: none;
@@ -100,14 +106,16 @@ h2 {
 #fahrenheit-link {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   cursor: default;
+  vertical-align: super;
 }
 #fahrenheit-link:visited {
   text-decoration: none;
 }
 #units-bar {
   font-size: 25px;
+  vertical-align: super;
 }
 #description {
   text-transform: capitalize;
@@ -122,25 +130,4 @@ h2 {
   text-align: center;
   font-family: "Poppins", sans-serif;
   margin-top: -30px;
-}
-.location-icon {
-  position: initial;
-}
-.humidity-icon {
-  width: 20px;
-}
-.wind-icon {
-  width: 20px;
-}
-.sun-icon {
-  width: 40px;
-}
-.clouds-icon {
-  width: 40px;
-}
-.cloud-icon {
-  width: 40px;
-}
-.rain-icon {
-  width: 40px;
 }
