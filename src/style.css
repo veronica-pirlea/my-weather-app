@@ -2,7 +2,7 @@ h1,
 h2 {
   text-align: center;
   font-family: "Hanken Grotesk", sans-serif;
-  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
   font-weight: 600;
   color: #fcefed;
 }
@@ -14,11 +14,13 @@ h2 {
   line-height: 2.3;
   font-size: 18px;
 }
-
+body {
+  background-color: #fafafa;
+}
 .weather-app {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/925/original/Untitled_design_%286%29.gif?1690990140");
   background-size: cover;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
   max-width: 600px;
   margin: 0 auto;
   padding: 100px;
@@ -31,37 +33,34 @@ h2 {
   font-family: "Hanken Grotesk", sans-serif;
   margin-inline: -45px;
 }
-
 .btn {
   color: #fcefed;
   border: 1px outset rgba(252, 239, 237, 0.9);
   font-size: 14px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
-
 .searched-city {
   margin-top: 10px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
   font-size: 16px;
   margin-inline: -35px;
   color: #fcefed;
   font-weight: 400;
 }
-
 .active {
   color: #fcefed;
   cursor: default;
 }
-
 .weather-details {
-  border: 1px inset rgba(0, 0, 0, 0.7);
+  border: 2px outset rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
   margin: 28px auto;
   padding: 10px;
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
   color: #f9f6f7;
 }
@@ -81,10 +80,10 @@ h2 {
   color: #f9f6f7;
 }
 .humidity-icon {
-  width: 23px;
+  width: 18px;
 }
 .wind-icon {
-  width: 23px;
+  width: 18px;
 }
 #enter-city {
   color: black;
@@ -97,6 +96,7 @@ h2 {
   font-family: "Hanken Grotesk", sans-serif;
   text-decoration: none;
   font-size: 20px;
+  font-weight: 350px;
   vertical-align: super;
 }
 #celsius-link:visited {
@@ -106,6 +106,7 @@ h2 {
   font-family: "Hanken Grotesk", sans-serif;
   text-decoration: none;
   font-size: 20px;
+  font-weight: 350px;
   cursor: default;
   vertical-align: super;
 }
