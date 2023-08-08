@@ -47,9 +47,11 @@ body {
   color: #fcefed;
   font-weight: 400;
 }
-.active {
-  color: #fcefed;
-  cursor: default;
+.units {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 20px;
+  font-weight: 350px;
+  vertical-align: super;
 }
 .weather-details {
   border: 2px outset rgba(0, 0, 0, 0.7);
@@ -91,31 +93,6 @@ body {
 #h1-icon {
   width: 90px;
   margin-bottom: -10px;
-}
-#celcius-link {
-  font-family: "Hanken Grotesk", sans-serif;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 350px;
-  vertical-align: super;
-}
-#celsius-link:visited {
-  text-decoration: none;
-}
-#fahrenheit-link {
-  font-family: "Hanken Grotesk", sans-serif;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 350px;
-  cursor: default;
-  vertical-align: super;
-}
-#fahrenheit-link:visited {
-  text-decoration: none;
-}
-#units-bar {
-  font-size: 25px;
-  vertical-align: super;
 }
 #description {
   text-transform: capitalize;
